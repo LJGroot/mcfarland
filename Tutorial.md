@@ -155,7 +155,7 @@ dimnames = list( yvars, lvars )
 
 "Theory is theory", they say. The WAIS-IV ought aims to measures 4 unidimensional latent factors, but in practice unidimensionality does not hold, at least for some measures.  
 - Working Memory Capacity indicator Arithmetic also loads on the factor Verbal Ability.
-- Speed indicator Figure Weights also loads on the Perceptual factor.
+- Working Memory indicator Figure Weights also loads on the Perceptual factor.
 
 The WAIS-IV measurement model thus deviates somewhat from the theoretical model. 
 
@@ -166,7 +166,7 @@ Hence, the pattern of loadings is:
 ```{r}
 lambda_measurement          <- lambda
 lambda_measurement[  6, 2 ] <- 1 # Working Memory indicator Arithmetic on the Verbal factor
-lambda_measurement[ 12, 1 ] <- 1 # Speed indicator Figure Weights on the Perceptual factor
+lambda_measurement[ 12, 1 ] <- 1 # Working Memory indicator Figure Weights on the Perceptual factor
 ```
 
 Now we know how the measurement model looks like, we can ask ourselves how to define this model in Psychonetrics. 
